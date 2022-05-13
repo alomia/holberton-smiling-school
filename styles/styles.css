@@ -1,0 +1,125 @@
+:root {
+  /*Colors*/
+  --color-white: #FFFFFF;
+  --color-light-purple:  #C271FF ;
+
+  /*Text color*/
+  --text-white: var(--color-white);
+  --text-light-purple: var(--color-light-purple);
+
+  /*font family*/
+  --font-family-SSP: 'Source Sans Pro';
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Header
+==========================================*/
+.header {
+  font-family: var(--font-family-SSP);
+  padding-top: 38px;
+  background-image: url(/images/pic_1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header .navbar-nav .nav-link {
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1.5remy;
+  color: var(--text-white);
+}
+
+.header-title {
+  margin-top: 174px;
+  font-size: 6.1rem;
+  line-height: 7.7rem;
+  color: var(--text-white);
+}
+
+.header-paragraph {
+  margin-bottom: 38px;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: var(--text-white);
+}
+
+.header-subtitle {
+  margin-top: 24px;
+  width: 345px;
+}
+
+/*button header*/
+.btn-light-purple {
+  border-radius: 22px;
+  background-color: var(--color-light-purple);
+  color: var(--text-white);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: var(--font-family-SSP);
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  padding: 13px 20px;
+}
+
+/* span purple*/
+.header-paragraph-2 {
+  margin-top: 150px;
+  margin-bottom: 87px;
+  font-weight: 300;
+  font-size: 3.2rem;
+  line-height: 4rem;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.text-span-purple {
+  font-weight: bold;
+  color: var(--text-light-purple);
+}
+
+/*Card*/
+
+.header .card {
+  margin-bottom: 58px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  width: 150px;
+}
+
+.header .card .card-body {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+
+}
+
+.header .card .card-title {
+  font-weight: 900;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+}
+
+.header .card .card-text,
+.header .card .card-footer {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.header .card .card-footer {
+  padding: 0;
+}
+
+/*Media Query
+========================*/
+@media screen and (min-width: 768px) {
+  .header-title {
+    font-size: 12.0rem;
+  }
+}
