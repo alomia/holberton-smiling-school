@@ -1,9 +1,11 @@
 :root {
   /*Colors*/
+  --color-dark: #071629;
   --color-white: #FFFFFF;
   --color-light-purple:  #C271FF ;
 
   /*Text color*/
+  --text-black: var(--color-dark);
   --text-white: var(--color-white);
   --text-light-purple: var(--color-light-purple);
 
@@ -13,6 +15,16 @@
 
 html {
   font-size: 62.5%;
+}
+
+/* background-color */
+.bg-light-purple {
+  background-color: var(--color-light-purple);
+}
+
+/* text color */
+.text-white {
+  color: var(--color-white);
 }
 
 /* Header
@@ -116,6 +128,256 @@ html {
   padding: 0;
 }
 
+.main {
+  font-family: var(--font-family-SSP);
+}
+
+/* Section testimonial
+===============================*/
+.testimonials {
+  padding: 100px 0 100px;
+}
+
+.testimonials .card img {
+  width: 150px;
+}
+
+.carousel .carousel-inner .card .card-text {
+  margin-bottom: 22px;
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 3.4rem;
+}
+
+.carousel .carousel-inner .card .card-title {
+  font-size: 2.2rem;
+  line-height: 3.4rem;
+}
+
+.carousel .carousel-inner .card .card-subtitle {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 3.4rem;
+}
+
+.testimonials .card {
+  max-width: 1200px;
+}
+
+.testimonials [class*="carousel-control"] img {
+  width: 32px;
+}
+
+/* Section tutorials
+====================================*/
+.tutorials {
+  padding: 87px 0;
+}
+
+.tutorials .card {
+  width: 255px;
+}
+
+.tutorials-paragraph {
+  margin-bottom: 75px;
+  font-weight: 300;
+  font-size: 3.2rem;
+  line-height: 4rem;
+  text-align: center;
+  color: var(--text-black);
+}
+
+.tutorials .card .card-body .card-title {
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: var(--text-black);
+}
+
+.tutorials .card .card-body .card-text {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+
+  color: rgba(7, 22, 41, 0.501584);
+}
+
+.tutorials .card .card-footer .img {
+  width: 30px;
+}
+
+.tutorials .card .play {
+  top: 13.43%;
+  left: 37.65%;
+  width: 62px;
+}
+
+.tutorials .card .card-footer .name {
+  margin-left: 13px;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 2.7rem;
+  color: var(--text-light-purple);
+}
+
+.tutorials .card .card-footer .star-rating img {
+  margin: 14px 0;
+  width: 15px;
+}
+
+.tutorials .card .card-footer .time {
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 2.7rem;
+  color: var(--text-light-purple);
+}
+
+.tutorials .carousel [class*="carousel-control"] img {
+  width: 32px;
+}
+
+/*Membership
+============================================*/
+.membership {
+  padding: 75px 0;
+  background-color: var(--color-dark);
+  color: var(--color-white);
+}
+
+.membership-paragraph {
+  margin-bottom: 50px;
+  font-weight: 300;
+  font-size: 3.2rem;
+  line-height: 4rem;
+  text-align: center;
+}
+
+.membership .card {
+  width: 257px;
+}
+
+.membership .card img {
+  width: 45px;
+}
+
+.membership .card .card-body .card-title {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  text-align: center;
+}
+
+.membership .card .card-body .card-text {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  text-align: center;
+}
+
+.membership button {
+  margin-top: 95px;
+}
+
+/* Latest videos
+================================*/
+
+.videos {
+  padding: 87px 0;
+}
+
+.videos .card {
+  width: 255px;
+}
+
+.videos .card .card-body .card-title {
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: var(--text-black);
+}
+
+.videos .card .card-body .card-text {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+
+  color: rgba(7, 22, 41, 0.501584);
+}
+
+.videos .card .card-footer .img {
+  width: 30px;
+}
+
+.videos .card .play {
+  top: 13.43%;
+  left: 37.65%;
+  width: 62px;
+}
+
+.videos .card .card-footer .name {
+  margin-left: 13px;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 2.7rem;
+  color: var(--text-light-purple);
+}
+
+.videos .card .card-footer .star-rating img {
+  margin: 14px 0;
+  width: 15px;
+}
+
+.videos .card .card-footer .time {
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 2.7rem;
+  color: var(--text-light-purple);
+}
+
+.videos .carousel [class*="carousel-control"] img {
+  width: 32px;
+}
+
+/* Footer
+===============================*/
+.footer {
+  padding: 50px 0;
+  background-color: var(--color-dark);
+  color: var(--text-white);
+}
+
+.footer .logo {
+  width: 169px;
+  margin-bottom: 45px;
+}
+
+.footer .logo .smile {
+  margin-right: 18px;
+  width: 37px;
+}
+
+.footer .logo .letter-logo {
+  width: 114px;
+}
+
+.footer .icons {
+  width: 150px;
+  margin-bottom: 45px;
+}
+
+.footer .icons .social-icons {
+  width: 30px;
+}
+
+.footer .text {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  text-align: center;
+  opacity: 0.35;
+}
+
 /*Media Query
 ========================*/
 @media screen and (min-width: 768px) {
@@ -123,3 +385,22 @@ html {
     font-size: 12.0rem;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .testimonials .card-body {
+    margin: 0 auto;
+    max-width: 475px;
+  }
+
+  .testimonials [class*="carousel-control"] {
+    padding-top: 130px;
+  }
+  
+}
+
+@media screen and (max-width: 1439px) {
+  .testimonials .card {
+    max-width: 590px;
+  }
+}
+
